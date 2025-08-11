@@ -7,6 +7,7 @@ import History from './components/pages/History';
 import Culture from './components/pages/Culture';
 import TravelTips from './components/pages/TravelTips';
 import Contact from './components/pages/Contact';
+import Festivos  from './components/pages/Festivos';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -21,6 +22,7 @@ function App() {
           <Route path="/culture" element={<Culture />} />
           <Route path="/travel-tips" element={<TravelTips />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/festivos" element={<Festivos />} />
         </Routes>
       </Layout>
     </Router>
