@@ -2,7 +2,8 @@ export interface Festivo {
   id: number,
   title: string,
   date: string,
-  description: string
+  description: string,
+  img: string
 }
 
 
@@ -34,59 +35,69 @@ export interface TravelTip {
   category: 'accommodation' | 'transportation' | 'food' | 'weather' | 'general';
 }
 
-export const Festivos : Festivo[]=[
+export const Festivos: Festivo[] = [
   {
     id: 1,
     title: 'Día de Reyes',
     date: '3, 4 y 5 de enero',
-    description: 'Las celebraciones en Monguí comienzan en enero con el Día de Reyes, una antigua tradición que ya cumple 200 años. Todos los años se celebra con dramas organizados por la parroquia.'
+    description: 'Las celebraciones en Monguí comienzan en enero con el Día de Reyes, una antigua tradición que ya cumple 200 años. Todos los años se celebra con dramas organizados por la parroquia.',
+    img: ''
   },
   {
     id: 2,
     title: 'Semana Santa',
     date: 'marzo/abril',
-    description: 'Gracias al interés de un pequeño colectivo fue recuperada esta fiesta que tiene todo el sentido de la fe y de la cultura católica.'
+    description: 'Gracias al interés de un pequeño colectivo fue recuperada esta fiesta que tiene todo el sentido de la fe y de la cultura católica.',
+    img: ''
   },
   {
     id: 3,
     title: 'Celebración de la Virgen',
     date: 'Mayo',
-    description: ' Durante el mes de mayo es la celebración de la Virgen. Todos los días por sus calles se ve la procesión acompañada de música, poesía y oraciones. Participan niños, jóvenes, adultos y abuelos. Familias de las zonas urbana y rural se congregan en la festividad.'
-  },{
+    description: ' Durante el mes de mayo es la celebración de la Virgen. Todos los días por sus calles se ve la procesión acompañada de música, poesía y oraciones. Participan niños, jóvenes, adultos y abuelos. Familias de las zonas urbana y rural se congregan en la festividad.',
+    img: ''
+  }, {
     id: 4,
     title: 'Corpus Christi',
     date: 'Junio',
-    description: 'Es la manifestación de adoración a Dios en la eucaristía. La expresión artística también sirve para alagarlo.'
-  },{
+    description: 'Es la manifestación de adoración a Dios en la eucaristía. La expresión artística también sirve para alagarlo.',
+    img: ''
+  }, {
     id: 5,
     title: 'Sagrado Corazón',
     date: 'Junio',
-    description: 'Junio es el mes de esta fiesta en la que se da gracias por la paz del pueblo. Expresiones culturales y políticas se toman sus calles y sitios de encuentro.'
-  },{
+    description: 'Junio es el mes de esta fiesta en la que se da gracias por la paz del pueblo. Expresiones culturales y políticas se toman sus calles y sitios de encuentro.',
+    img: ''
+  }, {
     id: 6,
     title: 'San Antonio',
     date: 'Junio',
-    description: 'Esta fiesta es toda una tradición en la población. Cuenta con una gran actividad cultural, procesiones y misas.'
-  },{
+    description: 'Esta fiesta es toda una tradición en la población. Cuenta con una gran actividad cultural, procesiones y misas.',
+    img: ''
+  }, {
     id: 7,
     title: 'La fiesta del Tránsito.',
     date: 'agosto',
-    description: 'Es una fiesta importante, más de fe que de cultura y turismo. Tiene novena, eucaristías, procesión y en cada fiesta se quema pólvora.'
-  },{
+    description: 'Es una fiesta importante, más de fe que de cultura y turismo. Tiene novena, eucaristías, procesión y en cada fiesta se quema pólvora.',
+    img: ''
+  }, {
     id: 8,
     title: 'Fiesta de la Virgen del Carmen',
     date: '30 y 31 de julio',
     description: 'Festividad en honor a la Santísima Virgen del Carmen, patrona de los transportadores de la Villa de Monguí en el Portón Blanco.'
-  },{
+    , img: ''
+  }, {
     id: 9,
     title: 'Fiesta de San Pedro y San Pablo',
     date: 'junio',
     description: 'Celebración religiosa que incluye procesiones y eventos culturales.'
-  },{
+    , img: ''
+  }, {
     id: 10,
     title: 'Feria del Balón',
     date: 'agosto',
     description: 'Este festival resalta los saberes y la creatividad existente en este destino turístico, esto destaca que la fabricación de balones cocidos a mano de manera artesanal, es una tradición de más de 80 años y para conmemorar estos saberes se han preparado actividades como la feria comercial y artesanal, talleres de elaboración de balones, concursos, presentaciones artísticas y culturales.'
+    , img: ''
   }
 ]
 
