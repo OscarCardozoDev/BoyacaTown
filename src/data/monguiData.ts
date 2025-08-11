@@ -31,25 +31,25 @@ export const attractions: Attraction[] = [
     id: 1,
     name: 'Basilica of Our Lady of Monguí',
     description: 'Built between 1694 and 1760 by Franciscans, this gorgeous colonial church dominates the main plaza and was declared a National Monument of Colombia in 1975. Its architecture represents one of the finest examples of colonial religious buildings in Colombia.',
-    imageUrl: 'basilica.jfif'
+    imageUrl: '/catedral.jfif'
   },
   {
     id: 2,
     name: 'Calicanto Bridge',
     description: 'Built in the 17th century, this historic stone and lime bridge is a symbol of colonial engineering and connects the town with the Franciscan convent. Legend has it that it was constructed using a mixture that included bull\'s blood.',
-    imageUrl: 'puente.jfif'
+    imageUrl: '/puente.jfif'
   },
   {
     id: 3,
     name: 'Football Museum (Museo del Balón)',
     description: 'Learn about Monguí\'s unique tradition of handcrafting footballs at this museum located on the main plaza. The town supplies approximately 25% of Colombia\'s national demand for footballs.',
-    imageUrl: '/football-museum.jpg'
+    imageUrl: '/museodelbalon.webp'
   },
   {
     id: 4,
     name: 'Páramo de Ocetá',
     description: 'Widely regarded as one of the most beautiful páramos (high-altitude Andean ecosystems) in Colombia, this natural wonder offers breathtaking hiking opportunities and stunning views. Colombia is home to 40% of the world\'s páramos.',
-    imageUrl: '/paramo.jpg'
+    imageUrl: '/paramo.webp'
   },
   {
     id: 5,
