@@ -1,3 +1,11 @@
+
+
+import semanaSanta from '../assets/images/semana_santa.jpg';
+import Reyes from '../assets/images/Día de Reyes.jpeg';
+import Virgen from '../assets/images/Fiesta de la Virgen del Carmen.png';
+import corpus from '../assets/images/copus-christi.jpg';
+import Transito from '../assets/images/Fiesta del Transito.jpg';
+import SanPedroYSanPablo from '../assets/images/Fiesta de San Pedro y San Pablo.jpg';
 export interface Festivo {
   id: number,
   title: string,
@@ -35,20 +43,20 @@ export interface TravelTip {
   category: 'accommodation' | 'transportation' | 'food' | 'weather' | 'general';
 }
 
-export const Festivos: Festivo[] = [
+export const festivos: Festivo[] = [
   {
     id: 1,
     title: 'Día de Reyes',
     date: '3, 4 y 5 de enero',
     description: 'Las celebraciones en Monguí comienzan en enero con el Día de Reyes, una antigua tradición que ya cumple 200 años. Todos los años se celebra con dramas organizados por la parroquia.',
-    img: ''
+    img: Reyes
   },
   {
     id: 2,
     title: 'Semana Santa',
     date: 'marzo/abril',
     description: 'Gracias al interés de un pequeño colectivo fue recuperada esta fiesta que tiene todo el sentido de la fe y de la cultura católica.',
-    img: ''
+    img: semanaSanta
   },
   {
     id: 3,
