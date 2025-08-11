@@ -31,13 +31,13 @@ export const attractions: Attraction[] = [
     id: 1,
     name: 'Basilica of Our Lady of Monguí',
     description: 'Built between 1694 and 1760 by Franciscans, this gorgeous colonial church dominates the main plaza and was declared a National Monument of Colombia in 1975. Its architecture represents one of the finest examples of colonial religious buildings in Colombia.',
-    imageUrl: '/basilica.jpg'
+    imageUrl: 'basilica.jfif'
   },
   {
     id: 2,
     name: 'Calicanto Bridge',
     description: 'Built in the 17th century, this historic stone and lime bridge is a symbol of colonial engineering and connects the town with the Franciscan convent. Legend has it that it was constructed using a mixture that included bull\'s blood.',
-    imageUrl: '/bridge.jpg'
+    imageUrl: 'puente.jfif'
   },
   {
     id: 3,

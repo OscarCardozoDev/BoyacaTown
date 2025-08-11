@@ -14,7 +14,7 @@ const Attractions: React.FC = () => {
         {attractions.map(attraction => (
           <div className="attraction-item" key={attraction.id} id={`${attraction.id}`}>
             <div className="attraction-image">
-              {/* Placeholder for image */}
+                <img src={attraction.imageUrl} alt={attraction.name} />
               <div className="placeholder-image">{attraction.name.charAt(0)}</div>
             </div>
             <div className="attraction-details">
