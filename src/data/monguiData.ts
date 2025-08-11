@@ -62,45 +62,45 @@ export const attractions: Attraction[] = [
 export const historicalFacts: HistoricalFact[] = [
   {
     id: 1,
-    title: 'Indigenous Origins',
-    description: 'Before the arrival of the Spanish, the area was inhabited by the Muisca people, one of Colombia\'s most developed indigenous civilizations. The name "Monguí" comes from the indigenous Muisca language and translates as "The Wife\'s Bath."',
+    title: 'Orígenes indígenas',
+    description: 'Antes de la llegada de los españoles, la zona estaba habitada por el pueblo muisca, una de las civilizaciones indígenas más desarrolladas de Colombia. El nombre "Monguí" proviene de la lengua indígena muisca y se traduce como "El Baño de la Esposa".',
     year: 'Pre-1550'
   },
   {
     id: 2,
-    title: 'Arrival of the Franciscans',
-    description: 'Franciscan monks arrived to evangelize the indigenous populations. The indigenous people were gathered to facilitate their conversion to Catholicism and access to their workforce.',
+    title: 'Llegada de los franciscanos',
+    description: 'Los monjes franciscanos llegaron para evangelizar a las poblaciones indígenas. Se congregaron para facilitar su conversión al catolicismo y el acceso a la fuerza laboral.',
     year: '1550'
   },
   {
     id: 3,
-    title: 'Official Foundation',
-    description: 'The town of Monguí was officially founded, establishing it as a colonial settlement.',
+    title: 'Fundación Oficial',
+    description: 'Se fundó oficialmente el pueblo de Monguí, estableciéndose como asentamiento colonial.',
     year: '1601'
   },
   {
     id: 4,
-    title: 'Construction of the Calicanto Bridge',
-    description: 'The iconic bridge was built using stone, lime, and according to legend, bull\'s blood. It was constructed to transport materials for the basilica.',
-    year: '17th century'
+    title: 'Construcción del Puente Calicanto',
+    description: 'El emblemático puente se construyó con piedra, cal y, según la leyenda, sangre de toro. Se construyó para transportar materiales para la basílica.',
+    year: 'siglo XVII'
   },
   {
     id: 5,
     title: 'Basilica Construction',
-    description: 'The Basilica of Our Lady of Monguí was built by the Franciscans, becoming the centerpiece of the town.',
+    description: 'La Basílica de Nuestra Señora de Monguí fue construida por los franciscanos, convirtiéndose en la pieza central del pueblo.',
     year: '1694-1760'
   },
   {
     id: 6,
-    title: 'National Monument Declaration',
-    description: 'The Basilica of Our Lady of Monguí was declared a National Monument of Colombia, recognizing its historical and architectural significance.',
+    title: 'Declaración de Monumento Nacional',
+    description: 'La Basílica de Nuestra Señora de Monguí fue declarada Monumento Nacional de Colombia, reconociendo su importancia histórica y arquitectónica.',
     year: '1975'
   },
   {
     id: 7,
-    title: 'Heritage Town Designation',
-    description: 'Monguí was designated as one of Colombia\'s Heritage Towns (Pueblos Patrimonio), acknowledging its well-preserved colonial architecture and cultural significance.',
-    year: 'Recent'
+    title: 'Designación de ciudad patrimonial',
+    description: 'Monguí fue designado como uno de los Pueblos Patrimonio de Colombia, en reconocimiento a su arquitectura colonial bien conservada y su importancia cultural.',
+    year: 'Reciente'
   }
 ];
 
