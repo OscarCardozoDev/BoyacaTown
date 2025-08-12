@@ -4,15 +4,32 @@
 
 .page-header {
   text-align: center;
-
-  background: url("../../assets/images/Flag_of_Monguí_\(Boyacá\).png");
-  background-size: 100% 100%;
+  position: relative;
   height: 300px;
-
+ 
   align-items: center;
   justify-content: center;
+  border-radius: 5rem 5rem 0 0;
+}
+
+.page-header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("../../assets/images/Flag_of_Monguí_\(Boyacá\).png");
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   border-radius: 5rem 5rem 0 0;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+.page-header > * {
+  position: relative;
+  z-index: 2;
 }
 
 .page-header h1 {
@@ -85,6 +102,7 @@
 }
 .transparente p {
 font-family: "Edu NSW ACT Cursive", cursive;
+color: #ffffff;
 }
 .transparente h1 {
 font-family: "Playfair Display", serif, sans-serif;
