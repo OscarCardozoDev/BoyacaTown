@@ -1,5 +1,3 @@
-
-
 import semanaSanta from '../assets/images/semana_santa.jpg';
 import Reyes from '../assets/images/Día de Reyes.jpeg';
 import Virgen from '../assets/images/Fiesta de la Virgen del Carmen.png';
@@ -112,32 +110,32 @@ export const festivos: Festivo[] = [
 export const attractions: Attraction[] = [
   {
     id: 1,
-    name: 'Basilica of Our Lady of Monguí',
-    description: 'Built between 1694 and 1760 by Franciscans, this gorgeous colonial church dominates the main plaza and was declared a National Monument of Colombia in 1975. Its architecture represents one of the finest examples of colonial religious buildings in Colombia.',
-    imageUrl: '/catedral.jfif'
+    name: 'Basílica de Nuestra Señora de Monguí',
+    description: 'Construida entre 1694 y 1760 por franciscanos, esta hermosa iglesia colonial domina la plaza principal y fue declarada Monumento Nacional de Colombia en 1975. Su arquitectura representa uno de los mejores ejemplos de edificios religiosos coloniales en Colombia.',
+    imageUrl: '/basilica.jpg'
   },
   {
     id: 2,
-    name: 'Calicanto Bridge',
-    description: 'Built in the 17th century, this historic stone and lime bridge is a symbol of colonial engineering and connects the town with the Franciscan convent. Legend has it that it was constructed using a mixture that included bull\'s blood.',
-    imageUrl: '/puente.jfif'
+    name: 'Puente Calicanto',
+    description: 'Construido en el siglo XVII, este histórico puente de piedra y cal es símbolo de la ingeniería colonial y conecta el pueblo con el convento franciscano. La leyenda dice que fue construido usando una mezcla que incluía sangre de toro.',
+    imageUrl: '/bridge.jpg'
   },
   {
     id: 3,
-    name: 'Football Museum (Museo del Balón)',
-    description: 'Learn about Monguí\'s unique tradition of handcrafting footballs at this museum located on the main plaza. The town supplies approximately 25% of Colombia\'s national demand for footballs.',
-    imageUrl: '/museodelbalon.webp'
+    name: 'Museo del Balón',
+    description: 'Conoce la tradición única de Monguí en la fabricación artesanal de balones de fútbol en este museo ubicado en la plaza principal. El pueblo suministra aproximadamente el 25% de la demanda nacional de balones de fútbol de Colombia.',
+    imageUrl: '/football-museum.jpg'
   },
   {
     id: 4,
     name: 'Páramo de Ocetá',
-    description: 'Widely regarded as one of the most beautiful páramos (high-altitude Andean ecosystems) in Colombia, this natural wonder offers breathtaking hiking opportunities and stunning views. Colombia is home to 40% of the world\'s páramos.',
-    imageUrl: '/paramo.webp'
+    description: 'Ampliamente considerado como uno de los páramos más hermosos de Colombia, esta maravilla natural ofrece oportunidades impresionantes para el senderismo y vistas espectaculares. Colombia es hogar del 40% de los páramos del mundo.',
+    imageUrl: '/paramo.jpg'
   },
   {
     id: 5,
-    name: 'Main Plaza',
-    description: 'The charming central plaza of Monguí is surrounded by colonial buildings with the distinctive white, green, and red color scheme that characterizes the town. It\'s the perfect place to relax and soak in the atmosphere.',
+    name: 'Plaza Principal',
+    description: 'La encantadora plaza central de Monguí está rodeada de edificios coloniales con el distintivo esquema de colores blanco, verde y rojo que caracteriza al pueblo. Es el lugar perfecto para relajarse y absorber la atmósfera.',
     imageUrl: '/plaza.jpg'
   }
 ];
@@ -217,44 +215,44 @@ export const culturalAspects: CulturalAspect[] = [
 export const travelTips: TravelTip[] = [
   {
     id: 1,
-    title: 'Best Time to Visit',
-    description: 'Monguí can be visited year-round, but be prepared for cold temperatures, especially in the evenings, as the town sits at an altitude of approximately 2,900 meters (9,500 feet).',
+    title: 'Mejor Época para Visitar',
+    description: 'Monguí puede visitarse durante todo el año, pero prepárate para temperaturas frías, especialmente en las noches, ya que el pueblo se encuentra a una altitud de aproximadamente 2.900 metros.',
     category: 'weather'
   },
   {
     id: 2,
-    title: 'Warm Clothing',
-    description: 'Pack warm clothes regardless of when you visit, as temperatures average around 13°C and can drop significantly at night.',
+    title: 'Ropa Abrigada',
+    description: 'Empaca ropa abrigada sin importar cuándo visites, ya que las temperaturas promedian alrededor de 13°C y pueden bajar significativamente por la noche.',
     category: 'weather'
   },
   {
     id: 3,
-    title: 'Cash Considerations',
-    description: 'There are no ATMs in Monguí, so bring sufficient cash with you. While some restaurants accept payment by card, most shops don\'t.',
+    title: 'Consideraciones de Efectivo',
+    description: 'No hay cajeros automáticos en Monguí, así que trae suficiente efectivo contigo. Aunque algunos restaurantes aceptan pagos con tarjeta, la mayoría de las tiendas no lo hacen.',
     category: 'general'
   },
   {
     id: 4,
-    title: 'Guided Tours',
-    description: 'For hiking in the Páramo de Ocetá, it\'s best to hire a local guide who can provide valuable information about the ecosystem and ensure you don\'t get lost.',
+    title: 'Tours Guiados',
+    description: 'Para hacer senderismo en el Páramo de Ocetá, es mejor contratar un guía local que puede proporcionar información valiosa sobre el ecosistema y asegurar que no te pierdas.',
     category: 'general'
   },
   {
     id: 5,
-    title: 'Local Restaurants',
-    description: 'Try La Casona restaurant located just off the plaza for traditional local cuisine with nice views.',
+    title: 'Restaurantes Locales',
+    description: 'Prueba el restaurante La Casona ubicado justo fuera de la plaza para cocina tradicional local con hermosas vistas.',
     category: 'food'
   },
   {
     id: 6,
-    title: 'Transportation',
-    description: 'Monguí is located about 4 hours by car from Bogotá. The road from Sogamoso to Monguí rises to almost 3,000m, offering beautiful scenery along the way.',
+    title: 'Transporte',
+    description: 'Monguí está ubicado a aproximadamente 4 horas en automóvil desde Bogotá. El camino desde Sogamoso hasta Monguí se eleva a casi 3.000m, ofreciendo hermosos paisajes en el trayecto.',
     category: 'transportation'
   },
   {
     id: 7,
-    title: 'Accommodation',
-    description: 'While there are limited options, you can find charming small hotels and guesthouses in and around Monguí for an authentic experience.',
+    title: 'Alojamiento',
+    description: 'Aunque hay opciones limitadas, puedes encontrar pequeños hoteles encantadores y casas de huéspedes en Monguí y sus alrededores para una experiencia auténtica.',
     category: 'accommodation'
   }
 ];
@@ -263,9 +261,9 @@ export const generalInfo = {
   name: 'Monguí',
   region: 'Boyacá',
   country: 'Colombia',
-  altitude: '2,900 meters (9,500 feet)',
-  population: 'Approximately 2,800',
-  climate: 'Cold and humid',
+  altitude: '2,900 metros',
+  population: 'Aproximadamente 2,800 habitantes',
+  climate: 'Frío y húmedo',
   averageTemperature: '13°C',
-  description: 'Monguí is a charming colonial town located in the Boyacá department of Colombia. It\'s considered one of Colombia\'s Heritage Towns (Pueblos Patrimonio) and is widely regarded as one of the most beautiful towns in the country. With its well-preserved colonial architecture, rich history, and stunning natural surroundings, Monguí offers visitors an authentic Colombian experience away from the more crowded tourist destinations.'
+  description: 'Monguí es un encantador pueblo colonial ubicado en el departamento de Boyacá, Colombia. Es considerado uno de los Pueblos Patrimonio de Colombia y es ampliamente reconocido como uno de los pueblos más hermosos del país. Con su arquitectura colonial bien conservada, rica historia y entornos naturales impresionantes, Monguí ofrece a los visitantes una experiencia colombiana auténtica lejos de los destinos turísticos más concurridos.'
 };

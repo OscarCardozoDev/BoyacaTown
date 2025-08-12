@@ -1,69 +1,126 @@
 import React, { useState } from 'react';
-import { travelTips } from '../../data/monguiData';
-import './TravelTips.css';
+import { attractions, travelTips, generalInfo } from '../../data/monguiData';
+import '../../../src/components/pages/TravelTips.css';
 
-type TipCategory = 'all' | 'accommodation' | 'transportation' | 'food' | 'weather' | 'general';
+const TravelTips = () => {
+  const [activeCategory, setActiveCategory] = useState('all');
 
-const TravelTips: React.FC = () => {
-  const [activeCategory, setActiveCategory] = useState<TipCategory>('all');
-  
-  const filteredTips = activeCategory === 'all' 
-    ? travelTips 
+  const filteredTips = activeCategory === 'all'
+    ? travelTips
     : travelTips.filter(tip => tip.category === activeCategory);
-  
-  const categories: { value: TipCategory; label: string }[] = [
-    { value: 'all', label: 'All Tips' },
-    { value: 'accommodation', label: 'Accommodation' },
-    { value: 'transportation', label: 'Transportation' },
-    { value: 'food', label: 'Food & Dining' },
-    { value: 'weather', label: 'Weather & Clothing' },
-    { value: 'general', label: 'General Advice' }
+
+  const categories = [
+    { value: 'all', label: 'Todos' },
+    { value: 'accommodation', label: 'Alojamiento' },
+    { value: 'transportation', label: 'Transporte' },
+    { value: 'food', label: 'Comida' },
+    { value: 'weather', label: 'Clima' },
+    { value: 'general', label: 'General' }
   ];
-  
+
   return (
     <div className="travel-tips-page">
+      {/* Header Principal */}
       <div className="page-header">
-        <h1>Travel Tips for Monguí</h1>
-        <p>Essential information to help you plan your visit to this beautiful heritage town</p>
+        <h1>Turismo en Monguí</h1>
+        <h2>Boyacá, Colombia</h2>
+        <p>{generalInfo.description}</p>
       </div>
-      
-      <div className="category-filter">
-        {categories.map(category => (
-          <button 
-            key={category.value}
-            className={`category-btn ${activeCategory === category.value ? 'active' : ''}`}
-            onClick={() => setActiveCategory(category.value)}
-          >
-            {category.label}
-          </button>
-        ))}
+
+      {/* Información General */}
+      <div className="general-info">
+        <div className="info-cards">
+          <div className="info-card">
+            <h3>Altitud</h3>
+            <p>{generalInfo.altitude}</p>
+          </div>
+          <div className="info-card">
+            <h3>Temperatura</h3>
+            <p>{generalInfo.averageTemperature}</p>
+          </div>
+          <div className="info-card">
+            <h3>Población</h3>
+            <p>{generalInfo.population}</p>
+          </div>
+          <div className="info-card">
+            <h3>Clima</h3>
+            <p>{generalInfo.climate}</p>
+          </div>
+        </div>
       </div>
-      
-      <div className="tips-container">
-        {filteredTips.map(tip => (
-          <div className="tip-card" key={tip.id}>
-            <div className={`tip-category ${tip.category}`}>
-              {tip.category.charAt(0).toUpperCase() + tip.category.slice(1)}
+
+      {/* Principales Atractivos Turísticos */}
+      <div className="attractions-section">
+        <h2>Principales Atractivos Turísticos</h2>
+        <div className="attractions-grid">
+          {attractions.map(attraction => (
+            <div className="attraction-card" key={attraction.id}>
+              <h3>{attraction.name}</h3>
+              <p>{attraction.description}</p>
             </div>
-            <h3>{tip.title}</h3>
-            <p>{tip.description}</p>
-          </div>
-        ))}
-        
-        {filteredTips.length === 0 && (
-          <div className="no-tips">
-            <p>No travel tips available for this category.</p>
-          </div>
-        )}
+          ))}
+        </div>
       </div>
-      
-      <div className="travel-note">
-        <h3>Additional Resources</h3>
-        <p>
-          For more detailed information about traveling to Monguí, you can contact our travel agency. 
-          We can provide personalized advice, help with transportation arrangements, and recommend 
-          accommodations based on your preferences and budget.
+
+      {/* Consejos de Viaje */}
+      <div className="travel-tips-section">
+        <h2>Consejos de Viaje</h2>
+        <p className="section-description">
+          Información esencial para planificar tu visita a este hermoso pueblo patrimonio
         </p>
+
+        <div className="category-filter">
+          {categories.map(category => (
+            <button
+              key={category.value}
+              className={`category-btn ${activeCategory === category.value ? 'active' : ''}`}
+              onClick={() => setActiveCategory(category.value)}
+            >
+              {category.label}
+            </button>
+          ))}
+        </div>
+
+        <div className="tips-container">
+          {filteredTips.map(tip => (
+            <div className="tip-card" key={tip.id}>
+              <div className={`tip-category ${tip.category}`}>
+                {tip.category.charAt(0).toUpperCase() + tip.category.slice(1)}
+              </div>
+              <h3>{tip.title}</h3>
+              <p>{tip.description}</p>
+            </div>
+          ))}
+
+          {filteredTips.length === 0 && (
+            <div className="no-tips">
+              <p>No hay consejos disponibles para esta categoría.</p>
+            </div>
+          )}
+        </div>
+      </div>
+
+      {/* Información Práctica */}
+      <div className="practical-info">
+        <h3>Información Adicional</h3>
+        <div className="practical-grid">
+          <div className="practical-card">
+            <h4>¿Cómo Llegar?</h4>
+            <ul>
+              <li>Desde Bogotá: 4 horas en automóvil</li>
+              <li>Ruta: Bogotá → Tunja → Sogamoso → Monguí</li>
+              <li>Transporte público disponible hasta Sogamoso</li>
+            </ul>
+          </div>
+          <div className="practical-card">
+            <h4>Recomendaciones Especiales</h4>
+            <ul>
+              <li>Llevar ropa abrigada para el clima frío</li>
+              <li>Traer efectivo (no hay cajeros automáticos)</li>
+              <li>Visitar el Museo del Balón en la plaza</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   );
