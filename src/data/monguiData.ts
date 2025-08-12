@@ -268,5 +268,5 @@ export const generalInfo = {
   population: 'Aproximadamente 2,800 habitantes',
   climate: 'Frío y húmedo',
   averageTemperature: '13°C',
-  description: 'Monguí es un encantador pueblo colonial ubicado en el departamento de Boyacá, Colombia. Es considerado uno de los Pueblos Patrimonio de Colombia y es ampliamente reconocido como uno de los pueblos más hermosos del país. Con su arquitectura colonial bien conservada, rica historia y entornos naturales impresionantes, Monguí ofrece a los visitantes una experiencia colombiana auténtica lejos de los destinos turísticos más concurridos.'
+  description: 'Monguí es un encantador pueblo colonial ubicado en el departamento de Boyacá, Colombia. Es considerado uno de los Pueblos Patrimonio de Colombia y es ampliamente reconocido como uno de los pueblos más hermosos del país. '
 };
