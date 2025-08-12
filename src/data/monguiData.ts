@@ -1,9 +1,12 @@
 import semanaSanta from '../assets/images/semana_santa.jpg';
 import Reyes from '../assets/images/Día de Reyes.jpeg';
-import Virgen from '../assets/images/Fiesta de la Virgen del Carmen.png';
+import Virgen from '../assets/images/Fiesta-de-la-Virgen-del-Carmen.png';
 import corpus from '../assets/images/copus-christi.jpg';
-import Transito from '../assets/images/Fiesta del Transito.jpg';
-import SanPedroYSanPablo from '../assets/images/Fiesta de San Pedro y San Pablo.jpg';
+import sagradoCorazon from '../assets/images/Sagrado-Corazón.jpg';
+import sanAntonio from '../assets/images/San-Antonio.jpg';
+import Transito from '../assets/images/La-fiesta-del-Tránsito.jpg'
+import PedroYpablo from '../assets/images/Fiesta de San Pedro y San Pablo.jpeg'
+import balon from '../assets/images/celebracion-de-la-virgen.jpg'
 export interface Festivo {
   id: number,
   title: string,
@@ -61,49 +64,49 @@ export const festivos: Festivo[] = [
     title: 'Celebración de la Virgen',
     date: 'Mayo',
     description: ' Durante el mes de mayo es la celebración de la Virgen. Todos los días por sus calles se ve la procesión acompañada de música, poesía y oraciones. Participan niños, jóvenes, adultos y abuelos. Familias de las zonas urbana y rural se congregan en la festividad.',
-    img: ''
+    img: Virgen
   }, {
     id: 4,
     title: 'Corpus Christi',
     date: 'Junio',
     description: 'Es la manifestación de adoración a Dios en la eucaristía. La expresión artística también sirve para alagarlo.',
-    img: ''
+    img: corpus
   }, {
     id: 5,
     title: 'Sagrado Corazón',
     date: 'Junio',
     description: 'Junio es el mes de esta fiesta en la que se da gracias por la paz del pueblo. Expresiones culturales y políticas se toman sus calles y sitios de encuentro.',
-    img: ''
+    img: sagradoCorazon
   }, {
     id: 6,
     title: 'San Antonio',
     date: 'Junio',
     description: 'Esta fiesta es toda una tradición en la población. Cuenta con una gran actividad cultural, procesiones y misas.',
-    img: ''
+    img: sanAntonio
   }, {
     id: 7,
     title: 'La fiesta del Tránsito.',
     date: 'agosto',
     description: 'Es una fiesta importante, más de fe que de cultura y turismo. Tiene novena, eucaristías, procesión y en cada fiesta se quema pólvora.',
-    img: ''
+    img: Transito
   }, {
     id: 8,
     title: 'Fiesta de la Virgen del Carmen',
     date: '30 y 31 de julio',
     description: 'Festividad en honor a la Santísima Virgen del Carmen, patrona de los transportadores de la Villa de Monguí en el Portón Blanco.'
-    , img: ''
+    , img: Virgen
   }, {
     id: 9,
     title: 'Fiesta de San Pedro y San Pablo',
     date: 'junio',
     description: 'Celebración religiosa que incluye procesiones y eventos culturales.'
-    , img: ''
+    , img: PedroYpablo
   }, {
     id: 10,
     title: 'Feria del Balón',
     date: 'agosto',
     description: 'Este festival resalta los saberes y la creatividad existente en este destino turístico, esto destaca que la fabricación de balones cocidos a mano de manera artesanal, es una tradición de más de 80 años y para conmemorar estos saberes se han preparado actividades como la feria comercial y artesanal, talleres de elaboración de balones, concursos, presentaciones artísticas y culturales.'
-    , img: ''
+    , img: balon
   }
 ]
 

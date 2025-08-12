@@ -1,11 +1,15 @@
 import React from 'react';
 import { festivos } from '../../data/monguiData';
+import './Festivos.css';
 const Festivos: React.FC= () => {
   return (
      <div className="attractions-page">
          <div className="page-header">
-           <h1>Attractions in Monguí</h1>
-           <p>Discover the beautiful landmarks and natural wonders of this heritage town</p>
+          <div className='transparente'>
+           <h1>Festivos en Mongui</h1>
+           <br />
+           <p>descubre los hermosos festivos de mongui</p>
+           </div>
          </div>
          
          <div className="attractions-list">
