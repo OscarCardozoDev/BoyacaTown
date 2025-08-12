@@ -29,6 +29,9 @@ const History: React.FC = () => {
               <h3>{fact.title}</h3>
               <p>{fact.description}</p>
             </div>
+            <div className="history-image">
+                <img src={fact.imageUrl} className="image" alt={fact.title} />
+            </div>
           </div>
         ))}
       </div>

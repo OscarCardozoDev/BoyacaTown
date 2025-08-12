@@ -28,6 +28,7 @@ export interface HistoricalFact {
   title: string;
   description: string;
   year?: string;
+  imageUrl: string;
 }
 
 export interface CulturalAspect {
@@ -148,43 +149,50 @@ export const historicalFacts: HistoricalFact[] = [
     id: 1,
     title: 'Orígenes indígenas',
     description: 'Antes de la llegada de los españoles, la zona estaba habitada por el pueblo muisca, una de las civilizaciones indígenas más desarrolladas de Colombia. El nombre "Monguí" proviene de la lengua indígena muisca y se traduce como "El Baño de la Esposa".',
-    year: 'Pre-1550'
+    year: 'Pre-1550',
+    imageUrl: '/origenes_indigenas.jpg'
   },
   {
     id: 2,
     title: 'Llegada de los franciscanos',
     description: 'Los monjes franciscanos llegaron para evangelizar a las poblaciones indígenas. Se congregaron para facilitar su conversión al catolicismo y el acceso a la fuerza laboral.',
-    year: '1550'
+    year: '1550',
+    imageUrl: '/llegada_franciscanos.jpg'
   },
   {
     id: 3,
     title: 'Fundación Oficial',
     description: 'Se fundó oficialmente el pueblo de Monguí, estableciéndose como asentamiento colonial.',
-    year: '1601'
+    year: '1601',
+    imageUrl: '/fundacion_oficial.jpg'
   },
   {
     id: 4,
     title: 'Construcción del Puente Calicanto',
     description: 'El emblemático puente se construyó con piedra, cal y, según la leyenda, sangre de toro. Se construyó para transportar materiales para la basílica.',
-    year: 'siglo XVII'
+    year: 'siglo XVII',
+    imageUrl: '/puente_calicanto.jpg'
   },
   {
     id: 5,
-    title: 'Basilica Construction',
+    title: 'Construcción de la Basilica',
     description: 'La Basílica de Nuestra Señora de Monguí fue construida por los franciscanos, convirtiéndose en la pieza central del pueblo.',
-    year: '1694-1760'
+    year: '1694-1760',
+    imageUrl: '/construccion_basilica.jpg'
   },
   {
     id: 6,
     title: 'Declaración de Monumento Nacional',
     description: 'La Basílica de Nuestra Señora de Monguí fue declarada Monumento Nacional de Colombia, reconociendo su importancia histórica y arquitectónica.',
-    year: '1975'
+    year: '1975',
+    imageUrl: '/monumento_nacional.jpg'
   },
   {
     id: 7,
     title: 'Designación de ciudad patrimonial',
     description: 'Monguí fue designado como uno de los Pueblos Patrimonio de Colombia, en reconocimiento a su arquitectura colonial bien conservada y su importancia cultural.',
-    year: 'Reciente'
+    year: 'Reciente',
+    imageUrl: '/ciudad_patrimonial.jpg'
   }
 ];
 
