@@ -4,9 +4,21 @@ import Virgen from '../assets/images/Fiesta-de-la-Virgen-del-Carmen.png';
 import corpus from '../assets/images/copus-christi.jpg';
 import sagradoCorazon from '../assets/images/Sagrado-Corazón.jpg';
 import sanAntonio from '../assets/images/San-Antonio.jpg';
-import Transito from '../assets/images/La-fiesta-del-Tránsito.jpg'
-import PedroYpablo from '../assets/images/Fiesta de San Pedro y San Pablo.jpeg'
-import balon from '../assets/images/celebracion-de-la-virgen.jpg'
+import Transito from '../assets/images/La-fiesta-del-Tránsito.jpg';
+import PedroYpablo from '../assets/images/Fiesta de San Pedro y San Pablo.jpeg';
+import balon from '../assets/images/celebracion-de-la-virgen.jpg';
+
+//history images
+import origenes_indigenas from '../assets/images/origenes_indigenas.jpg';
+import llegada from '../assets/images/llegada_franciscanos.jpg';
+import fundacion from '../assets/images/fundacion_oficial.jpg';
+import construccion from '../assets/images/construccion_basilica.jpg';
+import basilica from '../assets/images/construccion_basilica.jpg';
+import declaracion from '../assets/images/monumento_nacional.jpg';
+import designacion from '../assets/images/ciudad_patrimonial.jpg'; 
+
+
+
 export interface Festivo {
   id: number,
   title: string,
@@ -150,49 +162,49 @@ export const historicalFacts: HistoricalFact[] = [
     title: 'Orígenes indígenas',
     description: 'Antes de la llegada de los españoles, la zona estaba habitada por el pueblo muisca, una de las civilizaciones indígenas más desarrolladas de Colombia. El nombre "Monguí" proviene de la lengua indígena muisca y se traduce como "El Baño de la Esposa".',
     year: 'Pre-1550',
-    imageUrl: '/origenes_indigenas.jpg'
+    imageUrl: origenes_indigenas
   },
   {
     id: 2,
     title: 'Llegada de los franciscanos',
     description: 'Los monjes franciscanos llegaron para evangelizar a las poblaciones indígenas. Se congregaron para facilitar su conversión al catolicismo y el acceso a la fuerza laboral.',
     year: '1550',
-    imageUrl: '/llegada_franciscanos.jpg'
+    imageUrl: llegada
   },
   {
     id: 3,
     title: 'Fundación Oficial',
     description: 'Se fundó oficialmente el pueblo de Monguí, estableciéndose como asentamiento colonial.',
     year: '1601',
-    imageUrl: '/fundacion_oficial.jpg'
+    imageUrl: fundacion
   },
   {
     id: 4,
     title: 'Construcción del Puente Calicanto',
     description: 'El emblemático puente se construyó con piedra, cal y, según la leyenda, sangre de toro. Se construyó para transportar materiales para la basílica.',
     year: 'siglo XVII',
-    imageUrl: '/puente_calicanto.jpg'
+    imageUrl: construccion
   },
   {
     id: 5,
     title: 'Construcción de la Basilica',
     description: 'La Basílica de Nuestra Señora de Monguí fue construida por los franciscanos, convirtiéndose en la pieza central del pueblo.',
     year: '1694-1760',
-    imageUrl: '/construccion_basilica.jpg'
+    imageUrl: basilica
   },
   {
     id: 6,
     title: 'Declaración de Monumento Nacional',
     description: 'La Basílica de Nuestra Señora de Monguí fue declarada Monumento Nacional de Colombia, reconociendo su importancia histórica y arquitectónica.',
     year: '1975',
-    imageUrl: '/monumento_nacional.jpg'
+    imageUrl: declaracion
   },
   {
     id: 7,
     title: 'Designación de ciudad patrimonial',
     description: 'Monguí fue designado como uno de los Pueblos Patrimonio de Colombia, en reconocimiento a su arquitectura colonial bien conservada y su importancia cultural.',
     year: 'Reciente',
-    imageUrl: '/ciudad_patrimonial.jpg'
+    imageUrl: designacion
   }
 ];
 
