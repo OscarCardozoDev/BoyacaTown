@@ -19,6 +19,7 @@ const Header: React.FC = () => {
               <li><Link to="/attractions">Attractions</Link></li>
               <li><Link to="/history">History</Link></li>
               <li><Link to="/culture">Culture</Link></li>
+              <li><Link to="/gastronomia">Gastronomy</Link></li>
               <li><Link to="/travel-tips">Travel Tips</Link></li>
               <li><Link to="/contact">Contact</Link></li>
               <li><Link to="/festivos">Festivals</Link></li>  

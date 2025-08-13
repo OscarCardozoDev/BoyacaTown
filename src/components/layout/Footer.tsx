@@ -18,11 +18,11 @@ const Footer: React.FC = () => {
             <div className="link-column">
               <h4>Explore</h4>
               <ul>
-                
                 <li><Link to="/">Home </Link></li>
                 <li><Link to="/attractions">Attractions</Link></li>
                 <li><Link to="/history">History</Link></li>
                 <li><Link to="/culture">Culture</Link></li>
+                <li><Link to="/gastronomia">Gastronomía</Link></li>
               </ul>
             </div>
             

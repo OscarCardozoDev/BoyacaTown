@@ -57,6 +57,152 @@ export interface TravelTip {
   category: 'accommodation' | 'transportation' | 'food' | 'weather' | 'general';
 }
 
+export interface GastronomyItem {
+  id: number;
+  name: string;
+  description: string;
+  category: 'plato-principal' | 'sopa' | 'panaderia' | 'postre' | 'bebida';
+  imageUrl?: string;
+}
+
+export const gastronomia: GastronomyItem[] = [
+  // Platos Principales
+  {
+    id: 1,
+    name: 'Cocido Boyacense',
+    description: 'El plato más típico de Monguí, preparado con papa de año, papa criolla, carne de res, cerdo y pollo, arveja verde con cáscara, haba verde o seca, hibias, nabos, cubios, rubas y bastante guiso hecho con cebolla de gajo, harina de maíz, condimentos y aceite vegetal.',
+    category: 'plato-principal',
+    imageUrl: 'https://www.cocina-colombiana.com/base/stock/Recipe/cocido-boyacense/cocido-boyacense_web.jpg'
+  },
+  {
+    id: 2,
+    name: 'Trucha Arcoíris',
+    description: 'Trucha fresca criada en las aguas limpias de la región, preparada asada o sudada. Es parte importante de la economía local y se caracteriza por su sabor suave y delicado.',
+    category: 'plato-principal',
+    imageUrl: 'https://img.freepik.com/fotos-premium/trucha-arcoiris-plancha-limon-cebolla-plato-pescado-asado_75924-24695.jpg'
+  },
+  {
+    id: 3,
+    name: 'Nabos con Queso Gratinado',
+    description: 'Plato tradicional que utiliza nabos, una planta local, mezclada con queso derretido. Los nabos son uno de los tubérculos ancestrales que han acompañado la dieta de las comunidades indígenas hasta hoy.',
+    category: 'plato-principal',
+    imageUrl: 'https://media-cdn.tripadvisor.com/media/photo-s/0f/b4/20/a4/nabos-con-queso.jpg'
+  },
+  {
+    id: 4,
+    name: 'Asaduras de Cordero',
+    description: 'Las asaduras del cordero son muy apetecidas y tradicionales en Monguí, incluyendo la rellena. Se preparan con las vísceras del cordero en preparaciones ancestrales.',
+    category: 'plato-principal',
+    imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUFFVG_tHxLmZ_g3JbJR7QXuBLl8sZq4wIQA&s'
+  },
+
+  // Sopas
+  {
+    id: 5,
+    name: 'Mazamorra Chiquita',
+    description: 'Sopa espesa con varios ingredientes como cereales, verduras y carnes: harina de maíz, arveja verde, habas, fríjol, hojas de col, carne de res, de cerdo, callo de res, papa criolla y papa de año.',
+    category: 'sopa',
+    imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlKtAWH9mMP1f_3X4nvl2cLp5pETo3Nxrphw&s'
+  },
+  {
+    id: 6,
+    name: 'Cuchuco de Maíz, Trigo y Cebada',
+    description: 'Sopa tradicional boyacense preparada con diferentes cereales según la variedad. Es un plato espeso y nutritivo, perfecto para el clima frío de Monguí.',
+    category: 'sopa',
+    imageUrl: 'https://www.pcrm.org/sites/default/files/cuchuco-cebada-perlada18.jpg'
+  },
+  {
+    id: 7,
+    name: 'Ajiaco Boyacense',
+    description: 'Variante local del famoso ajiaco, preparado con ingredientes típicos de la región boyacense y adaptado a los productos locales de Monguí.',
+    category: 'sopa',
+    imageUrl: 'https://www.recetasnestle.com.co/sites/default/files/srh_recipes/f78cf6630b31638994b09b3b470b085c.jpg'
+  },
+  {
+    id: 8,
+    name: 'Sopa de Orellana',
+    description: 'Sopa preparada con orellana, un hongo catalogado como producto alimenticio del futuro por sus propiedades nutritivas y proteínicas. Es un cultivo relativamente nuevo en la región.',
+    category: 'sopa',
+    imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0cslvWynImjVjKS5RrEKwsrxfGjB2uI1vyQ&s'
+  },
+
+  // Panadería
+  {
+    id: 9,
+    name: 'Pan de Agua',
+    description: 'Pan tradicional de Monguí, elaborado de manera artesanal con técnicas ancestrales. Se caracteriza por su textura suave y sabor único.',
+    category: 'panaderia',
+    imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5JOp6IgBh9rV3RH1cZqKIRvmm1Zo9NDXsiA&s'
+  },
+  {
+    id: 10,
+    name: 'Pan de Leche',
+    description: 'Variante del pan tradicional elaborado con leche fresca de la región, lo que le da una textura más suave y un sabor ligeramente dulce.',
+    category: 'panaderia',
+    imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTD_EQdQzyk-F5CBkFQMelikA0pzm8Lv3a5xA&s'
+  },
+  {
+    id: 11,
+    name: 'Mogolla Campesina',
+    description: 'Pan tradicional de Monguí, parte de la rica tradición panadera boyacense. Cada pueblo tiene su receta particular, y la mogolla campesina es la especialidad de Monguí.',
+    category: 'panaderia',
+    imageUrl: 'https://cdn1.totalcommerce.cloud/mercadozapatoca/product-image/es/mogolla-campesina-pequena-1.webp'
+  },
+  {
+    id: 12,
+    name: 'Amasijos de la Abuela',
+    description: 'Bizcochuelos tradicionales, colaciones y almojábanas que forman parte de la repostería tradicional heredada de las abuelas de la región.',
+    category: 'panaderia',
+    imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ-Be-nexYXCUmpwpHZZJyvo8bo7g-ubideg&s'
+  },
+
+  // Postres
+  {
+    id: 13,
+    name: 'Dulces de Papayuela',
+    description: 'Dulce tradicional preparado con papayuela, una fruta local. La variedad de postres incluye también dulces de mora, fresa y curuba.',
+    category: 'postre',
+    imageUrl: 'https://img-global.cpcdn.com/recipes/ce74504b0d441444/680x781cq80/dulce-de-papayuela-foto-principal.jpg'
+  },
+  {
+    id: 14,
+    name: 'Postres de Orellana',
+    description: 'Innovadores postres preparados con orellana, el hongo que se ha convertido en un producto gourmet de la región por sus propiedades nutritivas.',
+    category: 'postre',
+    imageUrl: 'https://img-global.cpcdn.com/recipes/555e2b22b7fc6439/680x781cq80/pastelitos-de-nuez-foto-principal.jpg'
+  },
+  {
+    id: 15,
+    name: 'Queso con Melao',
+    description: 'Postre tradicional que combina queso fresco local con melao de panela, creando un contraste perfecto entre lo salado y lo dulce.',
+    category: 'postre',
+    imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzm_MQ0JYsLMSdfxbmJ3PFx60b_sOje8eQBg&s'
+  },
+
+  // Bebidas
+  {
+    id: 16,
+    name: 'Chicha de Maíz',
+    description: 'Bebida tradicional fermentada preparada con maíz, muy popular en toda la región boyacense y acompañante perfecta de los platos típicos.',
+    category: 'bebida',
+    imageUrl: 'https://cdn.colombia.com/gastronomia/2011/08/03/chicha-1604.gif'
+  },
+  {
+    id: 17,
+    name: 'Masato de Maíz',
+    description: 'Bebida refrescante preparada con maíz, ideal para acompañar las comidas típicas de la región.',
+    category: 'bebida',
+    imageUrl: 'https://www.elespectador.com/resizer/yav1aqVV3F9QarjP4U-TJyqmaDU=/arc-anglerfish-arc2-prod-elespectador/public/SD4DBIJKLJBYFMHO6V4WTNVBOY.png'
+  }
+];
+
+export const gastronomiaNotes = {
+  introduction: "La gastronomía de Monguí es un rico patrimonio culinario que combina tradiciones indígenas muiscas con influencias coloniales españolas. La base de la cocina mongüense son los productos de la agricultura local como la papa, la yuca, las habas, las hojas de col y diversos cereales que se producen en la región.",
+  heritage: "Monguí ha heredado sus sabores culinarios de los antepasados indígenas. Aunque con la llegada de los españoles hubo mezclas de recetas, la fuerza de lo tradicional se impuso y la cocina de esta zona de Boyacá ha permanecido intacta con el paso de los años.",
+  quality: "Los visitantes disfrutan de comida típica de calidad, ya que existe un desarrollo agropecuario muy cualificado del que se resaltan productos como las carnes de carnero, los quesos, las génovas y una gran variedad de verduras típicas de la región cundiboyacense.",
+  innovation: "En la actualidad se ha fortalecido el cultivo de orellana, un hongo catalogado como producto alimenticio para el futuro que ha causado interés por sus propiedades alimenticias y proteínicas, del cual existen varios cultivos formando unidades productivas."
+};
+
 export const festivos: Festivo[] = [
   {
     id: 1,
